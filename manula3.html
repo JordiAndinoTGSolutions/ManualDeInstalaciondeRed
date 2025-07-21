@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manual Supremo de Instalación de Redes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #005599;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Color azul más atractivo */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .seccion {
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .tip, .advertencia {
+            border-left: 5px solid;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+
+        .tip {
+            border-color: green;
+            background-color: #e7fce9;
+        }
+
+        .advertencia {
+            border-color: red;
+            background-color: #ffe6e6;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Manual Supremo de Instalación de Redes</h1>
+        <p>Instalación paso a paso para hogar y empresa</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrar('hogar')">Instalación en el Hogar</button>
+        <button onclick="mostrar('empresa')">Instalación en la Empresa</button>
+    </nav>
+
+    <div class="container">
+        <div id="hogar" class="oculto">
+            <div class="seccion">
+                <h2>🔧 Paso 1: Conociendo las herramientas</h2>
+                <p>Antes de comenzar, asegúrate de tener estas herramientas:</p>
+                <ul>
+                    <li><strong>Crimpadora:</strong> <img src="https://imgs.search.brave.com/cWxtvYa0m6xq6nkoZ9pOxnMXPsMbAUso3CRuzIp2GHY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF83/MDQ3MzAtTUxBNzk4/MTAwMzg4MDVfMTAy/MDI0LU8ud2VicA" alt="Crimpadora"></li>
+                    <li><strong>Tester de red:</strong> <img src="https://imgs.search.brave.com/TgGUJW8H7LhfR1uxJXKcaHkGtiJur3PoHivhDPABcwE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF85/NzA2ODgtTUxBNzc3/MDM2Mzc0ODRfMDcy/MDI0LU8ud2VicA" alt="Tester de red"></li>
+                    <li><strong>Pelacables o cuchilla:</strong> <img src="https://imgs.search.brave.com/86IC8fngxNQnOP3bIODqqk-0a-RdrWpPccNB_UaGTYs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL0NxRUFB/T1N3aURobjNtc0wv/cy1sNTAwLmpwZw" alt="Pelacables"></li>
+                    <li><strong>Conectores RJ45:</strong> <img src="https://imgs.search.brave.com/tdGXhkvt8AtrqAWXgTyr4tH5N7kIfd_OnAQ2qyVchZU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAx/MDYvNjMzOS81Mzkx/L2ZpbGVzLzEwMjR4/MzQwLTRfMTAyNHgx/MDI0LmpwZz92PTE2/NjMwMzM5MDA" alt="Conectores RJ45"></li>
+                    <li><strong>Cable UTP categoría 5e o superior:</strong> <img src="https://imgs.search.brave.com/ligxsNlyBVcjI5zW2xC1fJAjIPNnxzxxXiNYeJE6Kro/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFhSERoSFZHZUwu/anBn" alt="Cable UTP"></li>
+                </ul>
+                <div class="tip">✅ Tip: Sujeta la crimpadora con fuerza, como si fuera una pinza. Coloca el conector con el clip hacia abajo y presiona hasta escuchar un "clic".</div>
+                <div class="advertencia">⚠️ Nunca cortes los cables de forma inclinada ni dejes los hilos desordenados: eso puede arruinar la conexión.</div>
+                <p>Para más detalles sobre cómo pelar un cable, consulta esta <a href="https://es.slideshare.net/slideshow/paso-a-paso-para-ponchar-un-cable-de-red/27186451" target="_blank">presentación sobre ponchado de cables de red</a>.</p>
+            </div>
+
+            <div class="seccion">
+                <h2>📏 Paso 2: Cortar y pelar el cable</h2>
+                <ol>
+                    <li>Mide el largo necesario entre los equipos.</li>
+                    <li>Usa el pelacables para quitar 2 cm del aislamiento del cable.</li>
+                    <li>Separa los 8 hilos y enderézalos con los dedos.</li>
+                    <li>Ordena los colores según la norma T568B (más usada en hogares).</li>
+                </ol>
+                <div class="tip">✅ Tip: Usa tus dedos para alisar los cables. El orden correcto en T568B es: blanco-naranja, naranja, blanco-verde, azul, blanco-azul, verde, blanco-marrón, marrón.</div>
+                <p>Para más detalles sobre cómo pelar un cable, consulta esta <a href="https://es.slideshare.net/slideshow/paso-a-paso-para-ponchar-un-cable-de-red/27186451" target="_blank">presentación sobre ponchado de cables de red</a>.</p>
+            </div>
+
+            <div class="seccion">
+                <h2>🔌 Paso 3: Conectando al router</h2>
+                <p>Una vez terminado el cableado, conecta uno al router y otro al dispositivo (TV, PC, consola).</p>
+                <div class="advertencia">⚠️ Nunca conectes el cable al puerto "WAN" del router si solo vas a usarlo como repetidor o punto de acceso.</div>
+                <div class="tip">✅ Coloca el router en el centro de la casa, en alto, y alejado de microondas o paredes gruesas para mejorar la señal.</div>
+            </div>
+
+            <div class="seccion">
+                <h2>🧪 Paso 4: Prueba de conexión</h2>
+                <p>Usa el tester de red o simplemente conecta el cable al router y a una laptop.</p>
+                <p>Haz una prueba de velocidad en <a href="https://fast.com" target="_blank">fast.com</a> o <a href="https://speedtest.net" target="_blank">speedtest.net</a></p>
+                <div class="tip">✅ Si los LEDs del puerto de red no encienden, revisa el orden de los hilos. Puede haber un crimpado defectuoso.</div>
+            </div>
+
+            <div class="seccion">
+                <h2>🌐 Topología de Red para el Hogar</h2>
+                <p>Se recomienda la topología en estrella, donde cada dispositivo se conecta a un switch central. Esto permite una mejor gestión del tráfico de red y facilita la identificación de problemas.</p>
+                <img src="https://imgs.search.brave.com/FiCnOioA-WlciHA9FgusX7Qeu1srXCefkYXpiZuVTYE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb3Z0/ZWNobm9sb2d5LmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wNi9Ub3BvbG9n/aWFzLWVuLUVzdHJl/bGxhLmpwZw" alt="Topología en Estrella para Hogar">
+            </div>
+
+            <div class="seccion">
+                <h2>❌ Posibles Errores en la Instalación en el Hogar</h2>
+                <ul>
+                    <li><strong>Conexiones flojas:</strong> Asegúrate de que los conectores RJ45 estén bien crimpados.
+                        <ul>
+                            <li><strong>Solución:</strong> Revisa y vuelve a crimpado si es necesario.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Orden incorrecto de los hilos:</strong> Verifica que los hilos estén en el orden correcto según la norma T568B.
+                        <ul>
+                            <li><strong>Solución:</strong> Reorganiza los hilos y vuelve a crimpado.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Longitud excesiva del cable:</strong> No excedas la longitud máxima recomendada (100 metros) para evitar pérdida de señal.
+                        <ul>
+                            <li><strong>Solución:</strong> Usa cables más cortos o añade un switch para extender la red.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interferencia:</strong> Mantén los cables alejados de fuentes de interferencia eléctrica.
+                        <ul>
+                            <li><strong>Solución:</strong> Reubica los cables o usa cables blindados.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="empresa" class="oculto">
+            <div class="seccion">
+                <h2>🏢 Paso 1: Planificación de red empresarial</h2>
+                <p>Antes de instalar, haz un mapa de tu oficina: ¿cuántos equipos hay?, ¿cuántos switches necesitas?, ¿será red cableada o también WiFi?</p>
+                <div class="tip">✅ Siempre instala más tomas de red de las necesarias. Así evitas problemas si crece tu oficina.</div>
+                <div class="tip">✅ Considera la posibilidad de futuras expansiones al planificar la red.</div>
+            </div>
+
+            <div class="seccion">
+                <h2>📋 Paso 2: Elección de materiales profesionales</h2>
+                <ul>
+                    <li><strong>Cable UTP categoría 6:</strong> para mejor velocidad y rendimiento. Este tipo de cable es más adecuado para entornos empresariales donde se requiere mayor ancho de banda.</li>
+                    <li><strong>Patch panels:</strong> para organizar y gestionar los cables de red. Facilitan el mantenimiento y la reconfiguración de la red.</li>
+                    <li><strong>Canaletas:</strong> para mantener los cables ordenados y protegidos. Ayudan a evitar enredos y daños en los cables.</li>
+                    <li><strong>Rack:</strong> para colocar el switch, módem y servidores de manera ordenada. Un rack bien organizado mejora la ventilación y el acceso a los equipos.</li>
+                </ul>
+                <div class="advertencia">⚠️ No uses cables o conectores de baja calidad: en empresas, cada segundo de desconexión cuesta dinero.</div>
+                <div class="tip">✅ Asegúrate de que todos los cables estén etiquetados para facilitar la identificación.</div>
+                <p>Para más detalles sobre cómo pelar un cable, consulta esta <a href="https://es.slideshare.net/slideshow/paso-a-paso-para-ponchar-un-cable-de-red/27186451" target="_blank">presentación sobre ponchado de cables de red</a>.</p>
+            </div>
+
+            <div class="seccion">
+                <h2>🛠️ Paso 3: Instalación y orden del cableado</h2>
+                <p>El cable debe ir por canaletas o techos. Usa etiquetas para identificar a qué puesto pertenece cada cable. Esto es crucial para el mantenimiento y la resolución de problemas.</p>
+                <div class="tip">✅ Instala un switch central y distribuye en estrella (topología). Siempre deja un cable libre por emergencia.</div>
+                <div class="tip">✅ Mantén los cables alejados de fuentes de interferencia, como motores eléctricos o transformadores.</div>
+            </div>
+
+            <div class="seccion">
+                <h2>🔒 Paso 4: Seguridad y configuración</h2>
+                <ul>
+                    <li>Cambia la clave por defecto del router. Esto es fundamental para evitar accesos no autorizados.</li>
+                    <li>Configura IPs estáticas o reserva por DHCP. Esto ayuda a mantener la estabilidad de la red.</li>
+                    <li>Activa firewalls y define rangos seguros. La seguridad de la red es crucial para proteger la información empresarial.</li>
+                </ul>
+                <div class="advertencia">⚠️ Nunca uses “admin/admin” como clave. Es lo primero que intenta un atacante.</div>
+                <div class="tip">✅ Realiza auditorías de seguridad periódicas para identificar vulnerabilidades.</div>
+            </div>
+
+            <div class="seccion">
+                <h2>🌐 Topología de Red para Empresas</h2>
+                <p>Se recomienda la topología en estrella o árbol, que permite escalabilidad y fácil mantenimiento. Esto facilita la adición de nuevos dispositivos sin afectar la red existente.</p>
+                <img src="https://imgs.search.brave.com/qLX0AEm-8DaYtRckUAu0KkDSaDRhw-2LTm6ZOH54T5c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2E0LzIx/L2JkL2E0MjFiZDhk/YWI0Mjg5MjViOGFk/ZTVlY2ZmY2NjNzBl/LmpwZw" alt="Topología en Estrella para Empresas">
+                <p>Para más detalles sobre cómo pelar un cable, consulta esta <a href="https://es.slideshare.net/slideshow/paso-a-paso-para-ponchar-un-cable-de-red/27186451" target="_blank">presentación sobre ponchado de cables de red</a>.</p>
+            </div>
+
+            <div class="seccion">
+                <h2>❌ Posibles Errores en la Instalación en la Empresa</h2>
+                <ul>
+                    <li><strong>Conexiones flojas:</strong> Asegúrate de que los conectores RJ45 estén bien crimpados.
+                        <ul>
+                            <li><strong>Solución:</strong> Revisa y vuelve a crimpado si es necesario.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Orden incorrecto de los hilos:</strong> Verifica que los hilos estén en el orden correcto según la norma T568B.
+                        <ul>
+                            <li><strong>Solución:</strong> Reorganiza los hilos y vuelve a crimpado.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Longitud excesiva del cable:</strong> No excedas la longitud máxima recomendada (100 metros) para evitar pérdida de señal.
+                        <ul>
+                            <li><strong>Solución:</strong> Usa cables más cortos o añade un switch para extender la red.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interferencia:</strong> Mantén los cables alejados de fuentes de interferencia eléctrica.
+                        <ul>
+                            <li><strong>Solución:</strong> Reubica los cables o usa cables blindados.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Falta de etiquetado:</strong> No olvides etiquetar los cables y puertos para facilitar el mantenimiento.
+                        <ul>
+                            <li><strong>Solución:</strong> Usa etiquetas claras y visibles para cada cable y puerto.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   <script>
+        function mostrar(seccion) {
+            // Ocultar todas las secciones
+            document.getElementById('hogar').classList.add('oculto');
+            document.getElementById('empresa').classList.add('oculto');
+            // Mostrar la sección seleccionada
+            document.getElementById(seccion).classList.remove('oculto');
+        }
+    </script>
+</body>
+</html> 
